@@ -100,12 +100,12 @@ function ChatInput({ chatId }: Props) {
 
 
   return (
-    <div className="bg-gray-700/50 text-gray-400 rounded-lg text-sm ">
+<div className="bg-gray-700/50 text-gray-400 rounded-lg text-sm" style={{ maxHeight: 'calc(33vh)' , overflowY: 'auto' }}>
       <form onSubmit={sendMessage} className="p-5 space-x-5 flex justify-center items-center">
         <div className="justify-start">
           <ChatRecord onExport={handleTranscriptionExported} />
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-1">
           <button
             className="bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded h-10"
             value={exportedTranscription?.toString()}

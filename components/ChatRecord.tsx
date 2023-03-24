@@ -95,13 +95,13 @@ const SpeechToText: React.FC<ISpeechToTextProps> = ({ onExport }) => {
             )}
 
             <button className="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded mr-4" onClick={() => setIsListening((prevState) => !prevState)}>
-              Start/Stop
+              Empezar/Parar grabación
             </button>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062A1.125 1.125 0 013 16.81V8.688zM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062a1.125 1.125 0 01-1.683-.977V8.688z" />
               </svg>
             <button className="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded" onClick={handleExportTranscription} disabled={!transcription}>
-              Export Transcription
+              Exportar transcripción
             </button>
           </div>
 
@@ -109,7 +109,7 @@ const SpeechToText: React.FC<ISpeechToTextProps> = ({ onExport }) => {
         </div>
 
         <div className="bg-gray-900 rounded-lg p-4 max-w-md mx-auto mt-8">
-          <h2 className="text-gray-400 mb-4">Exported Transcription</h2>
+          <h2 className="text-gray-400 mb-4">Transcripción exportada:</h2>
 
           {exportedTranscription ? (
             <div>
@@ -117,7 +117,7 @@ const SpeechToText: React.FC<ISpeechToTextProps> = ({ onExport }) => {
               <button className="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded" onClick={() => setExportedTranscription(null)}>Clear</button>
             </div>
           ) : (
-            <p className="text-gray-400">No exported transcription yet.</p>
+            <p className="text-orange-400">Aun no se han exportado transcripciones.</p>
           )}
         </div>
       </div>
