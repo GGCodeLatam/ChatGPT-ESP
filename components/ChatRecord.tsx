@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 
 import { MicrophoneIcon } from "@heroicons/react/24/solid";
