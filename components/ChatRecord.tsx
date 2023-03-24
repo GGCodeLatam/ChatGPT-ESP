@@ -39,7 +39,7 @@ const SpeechToText: React.FC<ISpeechToTextProps> = ({ onExport }) => {
     handleListen();
   }, [isListening]);
 
-  const handleListen = (): void => {
+  const handleListen = (): any => {
     if (isListening) {
       mic.start();
       mic.onend = () => {
