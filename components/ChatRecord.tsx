@@ -27,7 +27,7 @@ interface ISpeechRecognitionEvent extends Event {
 }
 
 interface ISpeechToTextProps {
-  onExport: (transcription: string) => string;
+  onExport: (transcription: string) => any;
 }
 
 const SpeechToText: React.FC<ISpeechToTextProps> = ({ onExport }) => {
