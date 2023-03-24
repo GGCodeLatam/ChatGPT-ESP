@@ -148,7 +148,7 @@ function ChatInput({ chatId }: Props) {
         <button
           className="bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded h-10"
           value={exportedTranscription?.toString()}
-          onClick={() => setPrompt(exportedTranscription ? preprompt + exportedTranscription + prepregunta + userInput : pregunta4) && setUserInput('')}
+          onClick={() => setPrompt(exportedTranscription ? preprompt + exportedTranscription + prepregunta + userInput : pregunta4)}
         >
           Pregunta personalizada
         </button>
