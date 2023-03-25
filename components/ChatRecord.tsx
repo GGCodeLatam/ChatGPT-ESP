@@ -80,8 +80,8 @@ const SpeechToText: React.FC<ISpeechToTextProps> = ({ onExport }) => {
   return (
     <>
       <div className="container mx-auto my-8">
-        <div className="bg-gray-900 rounded-lg p-4 max-w-md mx-auto">
-          <div className="flex items-center mb-4 gap-4">
+        <div className="bg-gray-900 rounded-lg p-2 max-w-md mx-auto">
+          <div className="flex items-center mb-4 gap-2">
             {isListening ? (
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9" />
